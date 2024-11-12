@@ -93,7 +93,7 @@ const App: React.FC = () => {
                 <p className="text-sm" style={{ color: '#f0f7f9' }}>Your Freezer Manager</p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col items-end gap-2">
               {isOffline && (
                 <span className="bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded text-xs">
                   Mode hors ligne
@@ -101,7 +101,6 @@ const App: React.FC = () => {
               )}
               {user && (
                 <>
-                  <UserProfile user={user} />
                   <button 
                     onClick={handleSignOut}
                     className="text-white px-4 py-2 rounded hover:bg-opacity-90 transition-colors"
@@ -109,6 +108,7 @@ const App: React.FC = () => {
                   >
                     Déconnexion
                   </button>
+                  <UserProfile user={user} />
                 </>
               )}
             </div>
