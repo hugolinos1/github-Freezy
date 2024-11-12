@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        "products": {
+          ".indexOn": ["type", "drawer"],
+          "$productId": {
+            ".validate": "newData.hasChildren(['name', 'type', 'quantity', 'drawer', 'entry_date'])",
+            "name": { ".validate": "newData.isString()" },
+            "type": { ".validate": "newData.isString()" },
+            "quantity": { ".validate": "newData.isNumber()" },
+            "drawer": { ".validate": "newData.isNumber()" },
+            "entry_date": { ".validate": "newData.isString()" },
+            "weight": { ".validate": "!newData.exists() || newData.isNumber()" }
+          }
+        },
+        "settings": {
+          ".validate": "newData.hasChildren(['drawer_count'])",
+          "drawer_count": { ".validate": "newData.isNumber() && newData.val() > 0" }
+        }
+      }
+    }
+  }
+}
