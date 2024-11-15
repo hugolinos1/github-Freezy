@@ -83,7 +83,7 @@ const App: React.FC = () => {
 
   const MainContent = () => (
     <div className="min-h-screen" style={{ backgroundColor: '#f0f7f9' }}>
-      <div className="px-4 py-6 shadow-lg" style={{ background: 'linear-gradient(to right, #8EBEC9, #a5cdd5)' }}>
+      <div className="px-4 py-6 shadow-lg" style={{ background: 'linear-gradient(to right, #96c2cb, #96c2cb)' }}>
         <div className="container mx-auto">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
