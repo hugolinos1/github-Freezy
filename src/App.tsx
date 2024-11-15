@@ -87,7 +87,7 @@ const App: React.FC = () => {
         <div className="container mx-auto">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src="https://i.ibb.co/PxQGCCZ/Freezy-logo.webp" alt="Freezy Logo" className="w-24 h-24" />
+              <img src="https://ibb.co/Q6csHdh/Freezy-logo.webp" alt="Freezy Logo" className="w-24 h-24" />
               <div>
                 <h1 className="text-3xl font-bold text-white">Freezy</h1>
                 <p className="text-sm" style={{ color: '#f0f7f9' }}>Your Freezer Manager</p>
