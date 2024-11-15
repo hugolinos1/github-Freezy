@@ -51,7 +51,7 @@ const AuthForm: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4" style={{ backgroundColor: '#f0f7f9' }}>
       <div className="text-center mb-8">
-        <img src="https://i.ibb.co/cNvz8LR/Freezy2.png" alt="Freezy Logo" className="w-64 h-64 mx-auto mb-4" />
+       <img src="https://i.ibb.co/cNvz8LR/Freezy2.png" alt="Freezy Logo" className="w-64 h-64 mx-auto mb-4" />
         <h1 className="text-4xl font-bold mb-2" style={{ color: '#8EBEC9' }}>Freezy</h1>
         <p className="text-xl" style={{ color: '#a5cdd5' }}>Your Freezer Manager</p>
       </div>
